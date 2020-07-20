@@ -1,7 +1,10 @@
 public class npkCalc {
     public static void main(String[] args) throws Exception {
-        Fertilizer guano = new Fertilizer("Seabird Guano", 0, 11, 0, 4);
+        //Create new fertilizer instance
+        Fertilizer guano = new Fertilizer("Seabird Guano", 0, 11, 0);
 
-        System.out.printf("\nSeabird Guano p value: %d", guano.getP());
+        System.out.printf("\n%s p value: %d", guano.getP());
+        System.out.printf("\n%s n value: %d", guano.getN());
+        System.out.printf("\n%s k value: %d", guano.getK());
     }
 }
