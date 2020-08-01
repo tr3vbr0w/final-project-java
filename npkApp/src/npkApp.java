@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.Scanner;
 
 //class declaration
@@ -60,7 +59,7 @@ public class npkApp
          //outputting the amount of each simple fertilizer to use in the mix
          System.out.printf("For a mix with n-p-k of %.0f-%.0f-%.0f, blend:%n",
              myCalc.getNVal(),myCalc.getPVal(), myCalc.getKVal());
-         System.out.printf("%.2f lbs of nitrogen%n%.2f lbs of phosphorus%n%.2f potassium%n",
+         System.out.printf("%.2f lbs of nitrogen%n%.2f lbs of phosphorus%n%.2f lbs potassium%n",
              myCalc.NPKresult[0], myCalc.NPKresult[1], myCalc.NPKresult[2]);
       
          //ask user if they are done 
