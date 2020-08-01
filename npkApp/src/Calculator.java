@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Calculator
 {
    //this is the desired quantity of mix
@@ -9,7 +11,8 @@ public class Calculator
    /*these are the values returned by the calc() method. they reflect the weight
    of fertilizer that is to be mixed.*/
    private double nLbs, pLbs, kLbs = 0; 
-   private String name;
+
+  double[] NPKresult;
    
    //constructor
    public Calculator() 
@@ -24,12 +27,19 @@ public class Calculator
    reflect the value as what it really is, a percentage. This is then multiplied
    by the desired quantity the user entered (amt) and divided by the nutrient 
    value of the supplied fertilizer.*/
-   public void calc(double n, double p, double k)
+
+
+
+   public double[] calc(double n, double p, double k)
    {
    
       nLbs = (nVal / 100 * amt) / n;
       pLbs = (nVal / 100 * amt) / p;
-      kLbs = (nVal / 100 * amt) / k;  
+      kLbs = (nVal / 100 * amt) / k;
+
+      NPKresult = new double[]{nLbs, pLbs, kLbs};
+      
+      return NPKresult;
    } 
    
    //getters

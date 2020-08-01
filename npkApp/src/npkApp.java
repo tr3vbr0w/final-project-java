@@ -44,7 +44,7 @@ public class npkApp
          myCalc.setAmt(input.nextDouble());
          
          //The user enters what they want the n-p-k value of their mixture to be
-         System.out.println("Enter what you need the values to be: ");
+         System.out.println("Enter the desired n-p-k ratio for your fertilizer: ");
          System.out.println();
              
          System.out.print("Nitrogen value: ");
@@ -61,7 +61,7 @@ public class npkApp
          System.out.printf("For a mix with n-p-k of %.0f-%.0f-%.0f, blend:%n",
              myCalc.getNVal(),myCalc.getPVal(), myCalc.getKVal());
          System.out.printf("%.2f lbs of nitrogen%n%.2f lbs of phosphorus%n%.2f potassium%n",
-             myCalc.getNLbs(), myCalc.getPLbs(), myCalc.getKLbs());
+             myCalc.NPKresult[0], myCalc.NPKresult[1], myCalc.NPKresult[2]);
       
          //ask user if they are done 
          System.out.println("Enter 0 to quit or 1 to continue");
