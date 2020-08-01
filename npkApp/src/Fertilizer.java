@@ -1,37 +1,39 @@
-/**
- * Fertilizer
- * all i changed was this
- */
 public class Fertilizer {
     //fields
-    private int n;
-    private int p;
-    private int k;
+    //these are the values of each of the soil amendments to be mixed
+    //n represents a fertilizer with a nutrient ratio of n-0-0, p one with a 
+    //ratio of 0-p-0, and k would be 0-0-k.
+    private double n = 0;
+    private double p = 0;
+    private double k = 0;
     private String name;
-    //Insert formula here to define the npk ratio
-
-    //Constructor
-    public Fertilizer(String name, int n, int p, int k) {
-        this.name = name;
-        this.n = n;
-        this.p = p;
-        this.k = k;
+   //Constructor
+    public Fertilizer() {
+       setN(n);
+       setP(p);
+       setK(k);
     };
-
-
     //Methods
-
-    //getRatio will be defined once we have the algebraic equation to do so
-    public int getN(){
-        return this.n;
+    public double getN(){
+       return this.n;
     };
-    public int getP(){
-        return this.p;
+    public double getP(){
+       return this.p;
     };
-    public int getK(){
-        return this.k;
+    public double getK(){
+       return this.k;
     };
     public String getName(){
-        return this.name;
+       return this.name;
     };
-};
+    //Setter Methods
+    public void setN(double n){
+       this.n = n/100;
+    }
+    public void setP(double p){
+       this.p = p/100;
+    }
+    public void setK(double k){
+       this.k = k/100;
+    }
+ };
